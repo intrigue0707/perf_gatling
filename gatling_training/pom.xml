@@ -5,22 +5,14 @@
   <groupId>testPerf</groupId>
   <artifactId>gatling_training</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <pluginGroups>
-    <pluginGroup>org.apache.maven.plugins</pluginGroup>
-  </pluginGroups>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <encoding>UTF-8</encoding>
 
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <gatling.version>${project.version}</gatling.version>
-    <gatling-maven-plugin.version>4.3.1</gatling-maven-plugin.version>
-    <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
-    <scala-maven-plugin.version>4.8.1</scala-maven-plugin.version>
+    <gatling.version>3.6.1</gatling.version>
+    <gatling-maven-plugin.version>3.1.2</gatling-maven-plugin.version>
     <default.simulation.class>simulations.PerfTestSimulation</default.simulation.class>
   </properties>
 
@@ -28,17 +20,17 @@
     <dependency>
       <groupId>io.gatling.highcharts</groupId>
       <artifactId>gatling-charts-highcharts</artifactId>
-      <version>3.6.1</version>
+      <version>${gatling.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.gatling.highcharts</groupId>
-      <artifactId>gatling-charts-highcharts</artifactId>
+      <groupId>io.gatling</groupId>
+      <artifactId>gatling-app</artifactId>
       <version>${gatling.version}</version>
     </dependency>
     <dependency>
       <groupId>io.gatling</groupId>
       <artifactId>gatling-recorder</artifactId>
-      <version>3.6.1</version>
+      <version>${gatling.version}</version>
     </dependency>
   </dependencies>
 
