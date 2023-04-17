@@ -6,7 +6,7 @@
   <artifactId>gatling_training</artifactId>
   <version>1.0-SNAPSHOT</version>
   <pluginGroups>
-    <pluginGroup>org.apache.maven.plugins, org.codehaus.mojo</pluginGroup>
+    <pluginGroup>org.apache.maven.plugins</pluginGroup>
   </pluginGroups>
 
   <properties>
@@ -16,7 +16,6 @@
 
     <gatling.version>3.6.1</gatling.version>
     <gatling-maven-plugin.version>3.1.2</gatling-maven-plugin.version>
-    <scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>
     <default.simulation.class>simulations.PerfTestSimulation</default.simulation.class>
   </properties>
 
