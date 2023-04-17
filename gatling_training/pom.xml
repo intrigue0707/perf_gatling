@@ -9,8 +9,6 @@
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <encoding>UTF-8</encoding>
-
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <gatling.version>${project.version}</gatling.version>
     <gatling-maven-plugin.version>4.3.1</gatling-maven-plugin.version>
@@ -24,6 +22,7 @@
       <groupId>io.gatling.highcharts</groupId>
       <artifactId>gatling-charts-highcharts</artifactId>
       <version>${gatling.version}</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.gatling</groupId>
@@ -42,7 +41,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>${maven-jar-plugin.version}</version>
       </plugin>
      <plugin>
         <groupId>net.alchim31.maven</groupId>
@@ -75,7 +74,7 @@
         <artifactId>gatling-maven-plugin</artifactId>
         <version>${gatling-maven-plugin.version}</version>
         <configuration>
-          <simulationClass>org.baeldung.${SimulationClass}</simulationClass>
+          <simulationClass>${default.simulation.class}</simulationClass>
         </configuration>
       </plugin>
     </plugins>
